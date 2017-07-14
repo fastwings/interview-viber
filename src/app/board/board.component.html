@@ -1,0 +1,10 @@
+﻿<div class="card">
+    <div class="card-block">
+        <div *ngFor="let item of rows" class="row">
+            <ng-container *ngFor="let item of cols">
+                <app-board-item matched="{{item.matched}}"></app-board-item>
+            </ng-container>
+        </div>
+        <button class="btn" (click)="randomize()">randomize</button>
+    </div>
+</div>
